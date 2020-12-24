@@ -52,4 +52,7 @@ Git操作:
 		执行提交，指定内容         git commit -m "first commit"
 		将文件添加到远程分支       git remote add aaa https://gitee.com/zhiyuan0932/c2002.git
 		将分支合并到主干           git push -u aaa master
-	
+
+
+
+	oooooo
