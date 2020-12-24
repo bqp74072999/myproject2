@@ -134,4 +134,5 @@ def add(request):
     add.save()
     print("hello")
     print("hello2")
+    print("hello3")
     return HttpResponse("添加成功")
