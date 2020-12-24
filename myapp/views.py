@@ -135,4 +135,5 @@ def add(request):
     print("hello")
     print("hello2")
     print("hello3")
+    print("hello4")
     return HttpResponse("添加成功")
