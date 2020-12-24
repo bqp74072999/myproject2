@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a2ad790-3981-4388-8b60-55ce2aa94eb1" name="Default Changelist" comment="哈哈1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/讲课笔记的副本.txt" beforeDir="false" afterPath="$PROJECT_DIR$/讲课笔记的副本.txt" afterDir="false" />
-    </list>
+    <list default="true" id="5a2ad790-3981-4388-8b60-55ce2aa94eb1" name="Default Changelist" comment="enenen2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608826495070</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="enenen2">
+      <created>1608826702834</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608826702834</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,7 +106,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="哈哈" />
     <MESSAGE value="哈哈1" />
-    <option name="LAST_COMMIT_MESSAGE" value="哈哈1" />
+    <MESSAGE value="enenen2" />
+    <option name="LAST_COMMIT_MESSAGE" value="enenen2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="583" y="339" key="Github.ShareDialog" timestamp="1608820190011">
@@ -117,9 +122,9 @@
       <screen x="0" y="23" width="1440" height="824" />
     </state>
     <state x="321" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.824@0.23.1440.824" timestamp="1608826422992" />
-    <state x="395" y="230" key="git4idea.merge.GitPullDialog" timestamp="1608826523523">
+    <state x="395" y="230" key="git4idea.merge.GitPullDialog" timestamp="1608826738084">
       <screen x="0" y="23" width="1440" height="824" />
     </state>
-    <state x="395" y="230" key="git4idea.merge.GitPullDialog/0.23.1440.824@0.23.1440.824" timestamp="1608826523523" />
+    <state x="395" y="230" key="git4idea.merge.GitPullDialog/0.23.1440.824@0.23.1440.824" timestamp="1608826738084" />
   </component>
 </project>
