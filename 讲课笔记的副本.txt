@@ -1,0 +1,55 @@
+服务器地址:
+	svn://www.oksvn.com/yhzy
+
+	用户名:zhangsan 密码 123
+	用户名:lisi 密码 123
+本地服务器
+	本地可以安装服务器:
+	安装 VisualSVN-Server-2.7.3.msi
+SVN基本操作:
+	svn客户端安装成功后，最好重启下电脑，就能够看到图标。
+	* checkout 将远程服务器内容检索到本地
+	* add 将新创建的文件，预添加
+	* commit 将更改、添加、删除文件信息提交到服务器
+	* update 更新服务器文件内容
+	* 编辑冲突: Edit Conflict
+	
+	第一次操作:checkout检索
+	添加的话:先add ，后commit
+	提交:直接commit
+	删除:直接commit
+	在所有修改文件之前:先update
+	
+	如果一不小心记录了用户名密码，右击，settings，saved data，执行clear
+Git操作:
+	服务器不装，安装git客户端
+	傻瓜式安装git客户端
+	
+	访问开源中国的-码云
+	https://gitee.com/?utm_source=oschina&utm_medium=link-index&utm_campaign=home
+	
+	打开git bash
+	
+	配置git基本信息
+		git config --global user.name "bqp74072999"
+		git config --global user.email "15514705038@163.com"
+		
+	指令:
+		初始化                     git init  
+		查看当前提交状态           git status
+		
+		添加文件                   git add hello.txt
+		执行提交，指定内容         git commit -m "first commit"
+		将文件添加到远程分支       git remote add origin https://gitee.com/zhiyuan0932/c2002.git
+		将分支合并到主干           git push -u origin master
+		
+	
+	#git内容pull到本地
+		下载到本地                 git clone https://gitee.com/zhiyuan0932/c2002.git
+		查看当前提交状态           git status
+		
+		添加文件                   git add hello.txt
+		执行提交，指定内容         git commit -m "first commit"
+		将文件添加到远程分支       git remote add aaa https://gitee.com/zhiyuan0932/c2002.git
+		将分支合并到主干           git push -u aaa master
+	
