@@ -132,4 +132,5 @@ def update(request):
 def add(request):
     add = YoyoPersoninfo.objects.create(name="haha",qq=999)
     add.save()
+    print("hello")
     return HttpResponse("添加成功")
