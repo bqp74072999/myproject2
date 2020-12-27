@@ -71,41 +71,42 @@ def cha(request):
 
     '''
     get是用来获取一个对象的，如果需要获取满足条件的一些人，就要用到filter
-    Person.objects.filter(name="abc") # 等于     
+    Person.objects.filter(name="abc") # 等于
     Person.objects.filter(name__contains="abc") # 名称中包含 "abc"的人
     # filter是找出满足条件的，当然也有排除符合某条件的
     Person.objects.exclude(name__contains="刘") # 排除包含 WZ 的Person对象
     Person.objects.filter(name__contains="刘").exclude(age=20) # 找出名称含有abc, 但是排除年龄是23岁的
-    
+
     Person.objects.all().count() 返回当前查询的总条数
+    Person.objects.filter(name="男").count() 返回男到的总条数
     排序
     Person.objects.all().order_by("age")  正序 类似 select * from person order by age asc
     Person.objects.all().order_by("-age")  倒序 类似select * from person order by age desc
     Person.objects.filter(age__in=[30,20]) in 语句 字段__in集合 类似select * from person where age in (30,20)
     Person.objects.filter(age=30).filter(username__contains="张")
+ 
 
 
-
-    yixie = YoyoPersoninfo.objects.filter(name="你好")         # 等于 
+    yixie = YoyoPersoninfo.objects.filter(name="你好")         # 等于
     for i in yixie:
         print(i.id,i.name)
-        
-    
+
+
     baohan = YoyoPersoninfo.objects.filter(name__contains="你好")         # 名称中包含 "abc"的人
     for i in baohan:
         print(i.id,i.name)
-        
-    
+
+
     paichu = YoyoPersoninfo.objects.exclude(name__contains="你好")        # 排除包含 你好 的Person对象
     for i in paichu:
         print(i.id,i.name)
-        
-        
+
+
     shuangtiaojian = YoyoPersoninfo.objects.filter(name__contains="你好").exclude(qq="45") #查询包含"你好"的 并且排除 qq为"45"的人
     for i in shuangtiaojian:
         print(i.id,i.name)
-        
-        
+
+
     zongshuliang = YoyoPersoninfo.objects.all().count() #查询总数
     print(zongshuliang)
     '''
@@ -137,3 +138,20 @@ def add(request):
     print("hello3")
     print("hello4")
     return HttpResponse("添加成功")
+
+
+def info(request):
+    # username = request.GET.get("u1")
+    # password = request.GET.get("p1")
+    # age = request.GET.get("a1")
+    # dict = ["zhang","wang","li"]
+    dict = [{"username":"汤晓宁","sex":"女"},{"username":"小小汤","sex":"女"},{"username":"赵萌呀","sex":"男"}]
+
+
+    return render(request,"myapp_t/info.html",context={"dict1":dict})
+
+
+def ifpd(request):
+    cj = int(request.GET.get("cj"))
+    print(cj)
+    return render(request,"myapp_t/ifpanduan.html",{"cj":cj})

@@ -29,6 +29,10 @@ urlpatterns = [
     url(r'^delete/', views.delete),
     url(r'^update/', views.update),
     url(r'^add/', views.add),
+    url(r'^info/', views.info),
+    url(r'^ifpd/', views.ifpd),
+
+
 
 
 
